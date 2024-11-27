@@ -139,7 +139,16 @@ Terminal Technology Department, Alipay, Ant Group.
   git clone https://github.com/antgroup/echomimic_v2
   cd echomimic_v2
 ```
+## For Automatic Installetion make shure Cuda >= 11.7, Python Version:3.10 ##
 
+```bash
+   sh linux_setup.sh
+```
+
+```
+   python app.py
+```
+## For manual Installetion ##
 ### Python Environment Setup
 
 - Tested System Environment: Centos 7.2/Ubuntu 22.04, Cuda >= 11.7
