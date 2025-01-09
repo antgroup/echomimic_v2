@@ -11,8 +11,6 @@ gradio
 accelerate==1.1.1
 clip @ https://github.com/openai/CLIP/archive/d50d76daa670286dd6cacf3bcd80b5e4823fc8e1.zip#sha256=b5842c25da441d6c581b53a5c60e0c2127ebafe0f746f8e15561a006c6c3be6a
 decord==0.6.0
-diffusers==0.31.0
-einops==0.8.0
 gradio_client==1.4.3
 imageio==2.36.0
 imageio-ffmpeg==0.5.1
@@ -31,9 +29,7 @@ controlnet-aux==0.0.9
 ffmpeg-python
 soundfile
 mediapipe
-decord
 IPython
 scenedetect
 moviepy==1.0.3
 huggingface_hub==0.26.2
-mediapipe
