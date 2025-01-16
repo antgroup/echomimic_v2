@@ -39,12 +39,6 @@ elif ffmpeg_path not in os.getenv('PATH'):
     print("add ffmpeg to path")
     os.environ["PATH"] = f"{ffmpeg_path}:{os.environ['PATH']}"
 
-width, height = 768, 768
-sample_rate = 16000
-cfg = 1.
-fps = 24
-context_frames = 12
-context_overlap = 3
 
 def generate(image_input, 
             audio_input, 
@@ -251,17 +245,17 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                     pose_input = gr.Textbox(label="姿态输入（目录地址）", placeholder="请输入姿态数据的目录地址", value="assets/halfbody_demo/pose/fight")
                 with gr.Group():
                     with gr.Row():
-                        # width = gr.Number(label="宽度（默认768，请选择默认值）", value=768)
-                        # height = gr.Number(label="高度（默认768，请选择默认值）", value=768)
+                        width = gr.Number(label="宽度（默认768，请选择默认值）", value=768)
+                        height = gr.Number(label="高度（默认768，请选择默认值）", value=768)
                         length = gr.Number(label="视频长度，推荐120）", value=120)
                     with gr.Row():
                         steps = gr.Number(label="步骤（默认6）", value=6)
-                        # sample_rate = gr.Number(label="采样率（默认16000）", value=16000)
-                        # cfg = gr.Number(label="cfg（推荐2.5）", value=2.5, step=0.1)
-                    # with gr.Row():
-                    #     fps = gr.Number(label="帧率（默认24）", value=24)
-                    #     context_frames = gr.Number(label="上下文框架（默认12）", value=12)
-                    #     context_overlap = gr.Number(label="上下文重叠（默认3）", value=3)
+                        sample_rate = gr.Number(label="采样率（默认16000）", value=16000)
+                        cfg = gr.Number(label="cfg（推荐2.5）", value=2.5, step=0.1)
+                    with gr.Row():
+                        fps = gr.Number(label="帧率（默认24）", value=24)
+                        context_frames = gr.Number(label="上下文框架（默认12）", value=12)
+                        context_overlap = gr.Number(label="上下文重叠（默认3）", value=3)
                     with gr.Row():
                         quantization_input = gr.Checkbox(label="int8量化（推荐显存12G的用户开启，并使用不超过5秒的音频）", value=False)
                         seed = gr.Number(label="种子(-1为随机)", value=-1)
