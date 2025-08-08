@@ -33,4 +33,3 @@ IPython
 scenedetect
 moviepy==1.0.3
 huggingface_hub==0.26.2
-mediapipe
