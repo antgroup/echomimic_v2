@@ -254,7 +254,7 @@ Make sure to check out the [discussions](https://github.com/antgroup/echomimic_v
 |    ✅    | Pretrained models trained on English and Mandarin Chinese on ModelScope   | 21st Nov, 2024 |
 |    ✅    | EMTD dataset list and processing scripts                | 21st Nov, 2024 |
 |    ✅    | Jupyter demo with pose and reference image alignmnet                | 16st Dec, 2024 |
-|    ✅    | Accelerated models                                        | 3st Jan, 2025 |
+|    ✅    | Accelerated models                                        | 3rd Jan, 2025 |
 |    🚀    | Online Demo on ModelScope to be released            | TBD |
 |    🚀    | Online Demo on HuggingFace to be released         | TBD |
 
