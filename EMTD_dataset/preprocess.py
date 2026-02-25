@@ -321,7 +321,7 @@ for sub_task in tasks:
                     pose_params_path = ori_video_path.replace('original_videos', 'image_audio_features/pose')
                     save_path = "./vis_pose_results/" + os.path.basename(ori_video_path)
                     draw_pose_video(pose_params_path, save_path, ori_frames=video_frame_crop)
-            except:
+            except Exception:
                 print(["extract crash!", index+start, ori_video_path, start, end])
                 continue 
 
