@@ -34,3 +34,4 @@ scenedetect
 moviepy==1.0.3
 huggingface_hub==0.26.2
 mediapipe
+decorator==4.4.2
