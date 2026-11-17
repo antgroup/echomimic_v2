@@ -24,7 +24,7 @@ scikit-learn==1.5.2
 scipy==1.14.1
 torchdiffeq==0.2.5
 torchsde==0.2.6
-mlflow==2.18.0
+mlflow==3.17.2
 controlnet-aux==0.0.9
 ffmpeg-python
 soundfile
