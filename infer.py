@@ -167,12 +167,13 @@ def main():
     print('Audio:', inputs_dict['audio'])
 
 
-    ref_flag = '.'.join([refimg_name.split('/')[-2], refimg_name.split('/')[-1]])
+    reference_path = Path(refimg_name)
+    ref_flag = '.'.join(filter(None, (reference_path.parent.name, reference_path.name)))
 
     save_path = Path(f"{save_dir}/{ref_flag}/{pose_name}")
     
     save_path.mkdir(exist_ok=True, parents=True)
-    ref_s = refimg_name.split('/')[-1].split('.')[0]
+    ref_s = reference_path.stem
     save_name = f"{save_path}/{ref_s}-a-{audio_name}-i{start_idx}"
     
     ref_image_pil = Image.open(inputs_dict['refimg']).resize((args.W, args.H))
